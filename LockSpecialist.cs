@@ -19,5 +19,12 @@ namespace Heist2
                 Console.WriteLine($"{Name} has opened the vault.");
             }
         }
+
+        public LockSpecialist(string nayme, int skeel, int pct)
+        {
+            Name = nayme;
+            SkillLevel = skeel;
+            PercentageCut = pct;
+        }
     }
 }

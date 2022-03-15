@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 namespace Heist2
-{            
+{
     public class Questions
     {
         public static void AskQuestions(List<IRobber> rolodex)
@@ -22,6 +22,27 @@ namespace Heist2
 
             Console.WriteLine("Enter the percentage cut of the new robber.");
             int newRobberCut = int.Parse(Console.ReadLine());
+
+
+            switch (newRobberSpecialty)
+            {
+                case 1:
+                    rolodex.Add(new Hacker(newRobberName, newRobberSkill, newRobberCut));
+                    break;
+                case 2:
+                    rolodex.Add(new LockSpecialist(newRobberName, newRobberSkill, newRobberCut));
+                    break;
+                case 3:
+                    rolodex.Add(new Muscle(newRobberName, newRobberSkill, newRobberCut));
+                    break;
+                default:
+                    throw new Exception("yo wtf did you do???");
+                    break;
+            }
+
+
+
+
         }
     }
 }

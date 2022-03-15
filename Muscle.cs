@@ -19,5 +19,12 @@ namespace Heist2
                 Console.WriteLine($"{Name} brutally murdered the security guard... like WTF bruh? You coulda just knocked him out?!");
             }
         }
+
+        public Muscle(string nayme, int skeel, int pct)
+        {
+            Name = nayme;
+            SkillLevel = skeel;
+            PercentageCut = pct;
+        }
     }
 }
