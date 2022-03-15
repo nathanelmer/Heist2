@@ -19,5 +19,12 @@ namespace Heist2
                 Console.WriteLine($"{Name} has taken down the alarm.");
             }
         }
+
+        public Hacker(string nayme, int skeel, int pct)
+        {
+            Name = nayme;
+            SkillLevel = skeel;
+            PercentageCut = pct;
+        }
     }
 }
