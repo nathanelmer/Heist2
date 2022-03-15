@@ -39,9 +39,10 @@ namespace Heist2
                         break;
                     default:
                         throw new Exception("FFS how do you keep doing this???");
-                        break;
                 }
             }
+            Bank RandomizedBank = new Bank();
+            RandomizedBank.ReconReport();
         }
     }
 }

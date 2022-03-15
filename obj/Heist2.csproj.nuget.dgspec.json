@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\foals\\workspace\\c-sharp\\Heist2\\Heist2.csproj": {}
+    "D:\\workspace\\csharp\\exercises\\Heist2\\Heist2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\foals\\workspace\\c-sharp\\Heist2\\Heist2.csproj": {
+    "D:\\workspace\\csharp\\exercises\\Heist2\\Heist2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\foals\\workspace\\c-sharp\\Heist2\\Heist2.csproj",
+        "projectUniqueName": "D:\\workspace\\csharp\\exercises\\Heist2\\Heist2.csproj",
         "projectName": "Heist2",
-        "projectPath": "C:\\Users\\foals\\workspace\\c-sharp\\Heist2\\Heist2.csproj",
-        "packagesPath": "C:\\Users\\foals\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\foals\\workspace\\c-sharp\\Heist2\\obj\\",
+        "projectPath": "D:\\workspace\\csharp\\exercises\\Heist2\\Heist2.csproj",
+        "packagesPath": "C:\\Users\\16155\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\csharp\\exercises\\Heist2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\foals\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\16155\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
