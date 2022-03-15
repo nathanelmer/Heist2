@@ -16,7 +16,7 @@ namespace Heist2
             }
             else
             {
-                Console.WriteLine($"{Name} murdered the security guard.");
+                Console.WriteLine($"{Name} brutally murdered the security guard... like WTF bruh? You coulda just knocked him out?!");
             }
         }
     }
