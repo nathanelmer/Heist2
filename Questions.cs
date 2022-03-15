@@ -37,7 +37,6 @@ namespace Heist2
                     break;
                 default:
                     throw new Exception("yo wtf did you do???");
-                    break;
             }
 
 
