@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\workspace\\csharp\\exercises\\Heist2\\Heist2.csproj": {}
+    "C:\\Users\\Cj\\workspace\\Heist2\\Heist2.csproj": {}
   },
   "projects": {
-    "D:\\workspace\\csharp\\exercises\\Heist2\\Heist2.csproj": {
+    "C:\\Users\\Cj\\workspace\\Heist2\\Heist2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workspace\\csharp\\exercises\\Heist2\\Heist2.csproj",
+        "projectUniqueName": "C:\\Users\\Cj\\workspace\\Heist2\\Heist2.csproj",
         "projectName": "Heist2",
-        "projectPath": "D:\\workspace\\csharp\\exercises\\Heist2\\Heist2.csproj",
-        "packagesPath": "C:\\Users\\16155\\.nuget\\packages\\",
-        "outputPath": "D:\\workspace\\csharp\\exercises\\Heist2\\obj\\",
+        "projectPath": "C:\\Users\\Cj\\workspace\\Heist2\\Heist2.csproj",
+        "packagesPath": "C:\\Users\\Cj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cj\\workspace\\Heist2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\16155\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\program files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

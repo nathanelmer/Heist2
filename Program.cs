@@ -41,6 +41,42 @@ namespace Heist2
                         throw new Exception("FFS how do you keep doing this???");
                 }
             }
+
+
+            List<IRobber> Crew = new List<IRobber>() { };
+
+            bool addCrew = true;
+
+            while (addCrew)
+            {
+                int indexNumber = 0;
+                foreach (IRobber robba in rolodex)
+                {
+                    Console.WriteLine($"{indexNumber += 1}. {robba.Name} - Skill Level: {robba.SkillLevel} - Percentage Cut: {robba.PercentageCut} - Specialty: {robba.Specialty}");
+                }
+                Console.WriteLine("Pick your crew member(s)");
+                int chosenMember = int.Parse(Console.ReadLine()) - 1;
+                Crew.Add(rolodex[chosenMember]);
+                rolodex.RemoveAt(chosenMember);
+                foreach (IRobber member in Crew)
+                {
+                    Console.WriteLine($"Crew includes: {member.Name}");
+                }
+                Console.WriteLine("Continue? Y/N");
+                string answer = Console.ReadLine().ToUpper();
+                switch (answer)
+                {
+                    case "N":
+                        cont = false;
+                        break;
+                    case "Y":
+                        cont = true;
+                        break;
+                    default:
+                        throw new Exception("FFS how do you keep doing this???");
+                }
+            }
+
             Bank RandomizedBank = new Bank();
             RandomizedBank.ReconReport();
         }
