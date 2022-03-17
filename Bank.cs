@@ -29,12 +29,36 @@ namespace Heist2
             Console.WriteLine($"{scores.OrderBy(s => s.Value).First().Key} is the weakest security point!");
             Console.WriteLine($"{scores.OrderBy(s => s.Value).Last().Key} is the strongest security point!");
 
-            var orderedScores = scores.OrderBy(s => s.Value);
-            foreach (KeyValuePair<string, int> item in orderedScores)
+
+            // var orderedScores = scores.OrderBy(s => s.Value);
+            // foreach (KeyValuePair<string, int> item in orderedScores)
+            // {
+            //     Console.WriteLine($"{item.Key} is the string name");
+            //     Console.WriteLine($"{item.Value} is the int value");
+            // }
+        }
+
+        public void DidYaWin(List<IRobber> thiefs)
+        {
+            foreach (IRobber thief in thiefs)
             {
-                Console.WriteLine($"{item.Key} is the string name");
-                Console.WriteLine($"{item.Value} is the int value");
+                thief.PerformSkill(this);
+            }
+
+            if (AlarmScore > 0 || SecurityGuardScore > 0 || VaultScore > 0)
+            {
+                Console.WriteLine("Mission Failed, We will get them nmext time");
+            }
+            else
+            {
+                Console.WriteLine("You did it!");
+                foreach (IRobber rob in thiefs)
+                {
+                    Console.WriteLine($"{rob.Name} took {CashOnHand * (rob.PercentageCut / 100)}");
+                }
             }
         }
+
+
     }
 }

@@ -67,10 +67,10 @@ namespace Heist2
                 switch (answer)
                 {
                     case "N":
-                        cont = false;
+                        addCrew = false;
                         break;
                     case "Y":
-                        cont = true;
+                        addCrew = true;
                         break;
                     default:
                         throw new Exception("FFS how do you keep doing this???");
@@ -79,6 +79,10 @@ namespace Heist2
 
             Bank RandomizedBank = new Bank();
             RandomizedBank.ReconReport();
+
+            RandomizedBank.DidYaWin(Crew);
+
+
         }
     }
 }
